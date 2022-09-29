@@ -1,0 +1,36 @@
+package Problem5;
+import java.util.Scanner;
+
+public class testDragon {
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		DragonLunch dl = new DragonLunch();
+		boolean checkEnd= true;
+		while(checkEnd) {
+			String name = in.next();
+			if (name.equals("End!")) {
+				checkEnd = false;
+			}
+			else {
+				char gender = in.next().charAt(0);
+				if (gender == 'B') {
+					Person p = new Person(name, Gender.B);
+				}
+				else {
+					Person p = new Person(name, Gender.G);
+				}
+			}
+		}
+		System.out.println(dl.WillDragonEatOrNot());
+		System.out.println(dl.cnt);
+		
+	}
+}
+/*
+ Asem G
+ Era B
+ Asel G
+ Duka B
+ End!
+ **/

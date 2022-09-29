@@ -1,0 +1,24 @@
+package Problem4;
+import Pr2_code.Student;
+import Pr2_code.Student.*;
+
+public class GradeBook{
+	double average;
+	double lowest;
+	double highest;
+	static double sumOfGrades;
+	static double sumOfStudents=0;
+	
+	
+	public String displayMassege() {
+		return "Welcome to the grade book for CS101 Object-oriented Programming and Desing!"
+				+ "\n\n" + "Please, input greades for students: " + "\n\n";
+	}
+	public double getAverage() {
+		for(Student s: Student.students) {
+			sumOfGrades+=s.getGrade();
+			sumOfStudents++;
+		}
+		return sumOfGrades/sumOfStudents;
+	}
+}

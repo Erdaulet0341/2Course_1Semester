@@ -1,0 +1,38 @@
+package Pr2_code;
+
+public class Student {
+	private int id;
+	String name;
+	public int year_of_study;
+	static int cnt;
+	
+	public Student() {
+		
+	}
+	
+	{
+		id = cnt++;
+	}
+	
+	public Student(String name) {
+		this.name = name;
+	}
+	
+	public Student(String name, int year_of_study) {
+		this.year_of_study = year_of_study;
+		this.name = name;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public String getName(){
+		return name;
+	}
+	
+	public String toString() {
+		return "name = "+name+", id = " +id;
+	}
+	
+	
+}

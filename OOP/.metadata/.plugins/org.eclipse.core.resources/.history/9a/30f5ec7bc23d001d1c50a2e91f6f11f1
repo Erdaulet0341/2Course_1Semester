@@ -1,0 +1,14 @@
+package Problem4;
+import Pr2_code.Student;
+import Pr2_code.Student.*;
+
+public class GradeBook{
+	double average;
+	double lowest;
+	double highest;
+	
+	public String displayMassege() {
+		return "\n\n" + "Welcome to the grade book for CS101 Object-oriented Programming and Desing!"
+				+ "\n\n" + "Please, input greades for students: ";
+	}
+}

@@ -1,0 +1,22 @@
+package Problem5;
+import java.util.Scanner;
+
+public class testDragon {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		boolean check = true;
+		while(check) {
+			String name = in.next();
+			if (name.equals("End!")) {
+				check = false;
+			}
+			else{
+				Person p = new Person(name);
+			}
+		}
+		for(Person cur: Person.person) 
+			System.out.println(cur);
+	}
+
+}

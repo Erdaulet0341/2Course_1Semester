@@ -1,0 +1,37 @@
+package Problem4;
+import java.util.Scanner;
+
+import Pr2_code.Student;
+import Pr2_code.Student.*;
+
+public class GradeBookTest {
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		GradeBook g = new GradeBook();
+		
+		boolean checkEnd = true;;
+		int cnt = 0, grade=0;
+		while(checkEnd) {
+			char c = (char) ('A'+cnt);
+			String name = String.valueOf(c);
+			if(grade != -1) {
+				grade = in.nextInt();
+				if(grade != -1) {
+					Student s = new Student(name, grade);
+				}
+				
+			}
+			else {
+				checkEnd = false;
+				break;
+			}
+			cnt++;
+		}
+		for (Student cur: Student.students) {
+			System.out.println(cur);
+		}
+		System.out.print(g.displayMassege());
+	}
+
+}

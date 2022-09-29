@@ -1,0 +1,11 @@
+package Problem5;
+import java.util.Scanner;
+
+public class testDragon {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		Person p = new Person("era");
+	}
+
+}

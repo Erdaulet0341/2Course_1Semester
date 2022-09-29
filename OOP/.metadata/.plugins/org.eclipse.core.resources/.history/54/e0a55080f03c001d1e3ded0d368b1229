@@ -1,0 +1,40 @@
+package Problem5;
+
+public class DragonLunch {
+	public String s = "";
+	public int cnt = 0;
+	String kidnap() {
+		for(Person i: Person.person) {
+			if(i.gender == Gender.B) {
+				s+="B";
+			}
+			else {
+				s+="G";
+			}
+		}
+		return s;
+	
+	}
+	boolean WillDragonEatOrNot(){
+		int i=0;
+		int length = s.length()*2, len = s.length();
+		while(len != 0) {
+			System.out.println(1);
+			if (s.charAt(i) == 'B' && s.charAt(i+1)=='G') {
+				s.replace("B", "");
+				len--;
+				s.replace("B", "");
+				len--;
+				i = 0; 
+				cnt++;
+			}
+			else if (i == length) {
+				return false;
+			}
+			else {
+				i++;
+			}
+		}
+		return true;
+	}
+}

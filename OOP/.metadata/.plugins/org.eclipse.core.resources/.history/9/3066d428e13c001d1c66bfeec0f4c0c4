@@ -1,0 +1,10 @@
+package Problem5;
+
+import java.util.Vector;
+
+public class DragonLunch {
+	
+	void kidnap (Person p){
+		System.out.print(p.toString());
+	}
+}

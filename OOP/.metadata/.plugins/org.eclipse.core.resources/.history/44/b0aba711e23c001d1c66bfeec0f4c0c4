@@ -1,0 +1,30 @@
+package Problem5;
+import java.util.Scanner;
+
+public class testDragon {
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		boolean checkEnd= true;
+		while(checkEnd) {
+			String name = in.next();
+			char gender = in.next().charAt(0);
+			if (name.equals("End!")) {
+				checkEnd = false;
+			}
+			else{
+				if (gender == 'B') {
+					Person p = new Person(name, Gender.B);
+				}
+				else {
+					Person p = new Person(name, Gender.G);
+				}
+			}
+		}
+		for(Person i: Person.person) {
+			System.out.println("name = " + i);
+			System.out.print("gender = " + i.gender);
+		}
+	}
+
+}

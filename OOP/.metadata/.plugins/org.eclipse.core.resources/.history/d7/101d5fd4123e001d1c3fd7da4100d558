@@ -1,0 +1,55 @@
+package Problem2;
+
+import java.util.Vector;
+
+public class Cars {
+	String name;
+	Transmissions transmissions;
+	private int id;
+	private int year;
+	final String MATERIAL  = "IRON";
+	private String color;
+	static Vector<Cars> cars;
+	static int cnt;
+	
+	static{
+		cars = new Vector<Cars>();
+	}
+	{
+		id = cnt++;
+		cars.add(this);
+	}
+	
+	public Cars() {}
+	public Cars(String name, int year, String colar){
+		this.name = name;
+		this.year = year;
+		this.color = colar;
+	}
+	public Cars(String name, int year, String color, Transmissions transmissions)
+	{
+		this(name, year, color);
+		this.transmissions = transmissions;
+	}
+	
+	public void Edit(String color) {
+		this.color = color;
+	}
+	public void Edit(Transmissions transmissions) {
+		this.transmissions = transmissions;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+	public int getId() {
+		return id;
+	}
+	
+
+	public String toString() {
+		return "Car "+ name+ ", "+ id + ", "+year + ", "+color + ", "+transmissions + ".";
+	}
+	
+	
+}

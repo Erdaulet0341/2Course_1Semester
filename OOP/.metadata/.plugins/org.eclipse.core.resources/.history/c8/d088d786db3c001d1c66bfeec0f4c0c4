@@ -1,0 +1,17 @@
+package Problem5;
+import java.util.Scanner;
+import java.util.Vector;
+
+public class Person {
+	Gender gender;
+	Scanner in = new Scanner(System.in);
+	String studentName = in.next();
+	static Vector<Person> person;
+	static{
+		person = new Vector<Person>();
+	}
+	{
+		person.add(this);
+	}
+	
+}

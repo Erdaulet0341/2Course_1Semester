@@ -1,0 +1,36 @@
+package Problem5;
+
+import java.util.LinkedList;
+
+public class DragonLunch {
+	public String s = "";
+	public int cnt = 0;
+	String kidnap() {
+		for(Person i: Person.person) {
+			if(i.gender == Gender.B) {
+				s+="B";
+			}
+			else {
+				s+="G";
+			}
+		}
+		return s;
+	
+	}
+	LinkedList<Character> linky = new LinkedList<>();
+	boolean WillDragonEatOrNot(){
+		for (int i=0; i<s.length(); i++) { //GBGB
+			if(linky.isEmpty()) {
+				linky.addLast(s.charAt(i));
+			}
+			else if(linky.getLast() == 'B' && s.charAt(i) == 'G') {
+				linky.removeLast();
+			}
+			else {
+				linky.addLast(s.charAt(i));
+			}
+		}
+		if(linky.isEmpty()) return true;
+		else return false;
+	}
+}

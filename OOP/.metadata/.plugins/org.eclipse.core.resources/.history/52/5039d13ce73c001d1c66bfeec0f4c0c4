@@ -1,0 +1,17 @@
+package Problem5;
+
+public class DragonLunch {
+	public String s = "";
+	String kidnap() {
+		for(Person i: Person.person) {
+			if(i.gender == Gender.B) {
+				s+="B";
+			}
+			else {
+				s+="G";
+			}
+		}
+		return s;
+	
+	}
+}

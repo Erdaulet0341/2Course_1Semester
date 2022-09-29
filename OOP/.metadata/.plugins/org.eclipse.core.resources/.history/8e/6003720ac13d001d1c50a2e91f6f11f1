@@ -1,0 +1,17 @@
+package Problem4;
+import java.util.Scanner;
+
+import Pr2_code.Student;
+import Pr2_code.Student.*;
+
+public class GradeBookTest {
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		GradeBook g = new GradeBook();
+		
+		
+		System.out.print(g.displayMassege());
+	}
+
+}

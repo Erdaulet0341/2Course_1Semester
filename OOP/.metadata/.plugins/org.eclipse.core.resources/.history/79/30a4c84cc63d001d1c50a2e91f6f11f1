@@ -1,0 +1,48 @@
+package Problem4;
+import Pr2_code.Student;
+import Pr2_code.Student.*;
+
+public class GradeBook{
+	double average;
+	double lowest=1e9d;
+	double highest=-1e9d;
+	static double sumOfGrades;
+	static int sumOfStudents=0;
+	String nameOfHighest, nameOfLowest; int idOfHighest, idOfLowest;
+	
+	Student s = new Student();
+	
+	public String displayMassege() {
+		return "Welcome to the grade book for CS101 Object-oriented Programming and Desing!"
+				+ "\n\n" + "Please, input greades for students: " + "\n\n";
+	}
+	public double getAverage() {
+		for(Student s: Student.students) {
+			sumOfGrades+=s.getGrade();
+			sumOfStudents++;
+			if(s.getGrade()<lowest) {
+				lowest = s.getGrade();
+				nameOfLowest = s.getName();
+				idOfLowest = s.getId();
+			}
+			if(s.getGrade()>highest) {
+				highest = s.getGrade();
+			}
+		}
+		average = sumOfGrades/sumOfStudents;
+		return average;
+	}
+	public double getHighest() {
+		return highest;
+	}
+	public double getLowest() {
+		return lowest;
+	}
+
+	public int getid() {
+		return s.students.;
+	}
+	public String determineClassAverage() {
+		return "Class average is " + average + ". Lowest grade is " + lowest + "(" + nameOfLowest +")";
+	}
+}
