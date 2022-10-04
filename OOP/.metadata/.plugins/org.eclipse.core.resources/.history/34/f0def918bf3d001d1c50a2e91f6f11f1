@@ -1,8 +1,0 @@
-package Problem4;
-
-public class GradeBookTest {
-	public static void main(String[] args) {
-		System.out.print("K");
-	}
-
-}

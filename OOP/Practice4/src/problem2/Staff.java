@@ -26,6 +26,6 @@ public class Staff extends Person {
 	}
 
 	public String toString() {
-		return "Staff[ Person [name = " + name + ", address = " + address + "], scholl = " + school +  ", pay = " + pay + "]";
+		return "Staff" + super.toString() + ", scholl = " + school +  ", pay = " + pay + "]";
 	}
 }

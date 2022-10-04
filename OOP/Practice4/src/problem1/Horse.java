@@ -23,7 +23,6 @@ public class Horse extends Animal {
 	double getSpeed() {
 		return speed;
 	}
-	
 	String getName() {
 		return name;      //Overriding
 	}
@@ -31,7 +30,7 @@ public class Horse extends Animal {
 	public double change(double weight) {
 		super.weight = weight;
 		return  super.weight;
-	}											//Overloading
+	}											         //Overloading
 	public double change() {
 		return 0;
 	}

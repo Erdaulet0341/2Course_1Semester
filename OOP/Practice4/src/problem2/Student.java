@@ -33,6 +33,6 @@ public class Student extends Person {
 	}
 
 	public String toString() {
-		return "Student [Person [name = " + name + ", address = " + address + "], program = " + program + ", year = " + year + ", fee = " + fee + "]";
+		return "Student" + super.toString() + ", program = " + program + ", year = " + year + ", fee = " + fee + "]";
 	}
 }
