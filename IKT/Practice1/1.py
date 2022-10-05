@@ -8,7 +8,7 @@ def print_arrays(l):
 fields = []
 rows = []
 
-path = "D:\Educational materials\semester-3\IKT\Practice1\IRM.csv"
+path = r"D:\Educational materials\2Course_1Semester\2Course_1Semester\IKT\Practice1\IRM.csv"
 with open(path, 'r') as csvFile:
     csvreader = csv.reader(csvFile)
     
