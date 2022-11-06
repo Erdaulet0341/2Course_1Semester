@@ -31,6 +31,7 @@ void inorder(node * n){
         inorder(n->right);
     }
 }
+
 int cnt=0;
 int leaf(node * n){
     if(n == NULL){

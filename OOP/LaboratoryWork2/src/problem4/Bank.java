@@ -15,7 +15,7 @@ public class Bank {
 		Account s2 = new SavingAccount(8);
 		Account s3 = new SavingAccount(9);
 		
-		System.out.println("\n ***Banking System Application***\n"); 
+		System.out.println("\n Banking System Application \n"); 
 		int ch;  
         do {  
         	Vector<Account> accounts = new Vector<Account>();

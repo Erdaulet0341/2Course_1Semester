@@ -11,10 +11,10 @@ public class Test {
 		Circuit g = new Parallel(c, d);
 		Circuit h = new Series(g, e);
 		Circuit circuit = new Parallel(h, f);
+		
 		double R = circuit.getResistance();
 		circuit.applyPotentialDiff(5);
-		System.out.println(R);
-		System.out.println(circuit.getPotentialDiff());
-		System.out.println(circuit.toString());
+		
+		System.out.println(circuit);
 	}
 }

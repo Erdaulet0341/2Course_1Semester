@@ -45,6 +45,6 @@ public class Series extends Circuit{
 	
 
 	public String toString() {
-		return "Series [Resistance=" + getResistance() + ", PotentialDiff=" + getPotentialDiff() + "]";
+		return super.toString() + " Series [Resistance=" + getResistance() + ", PotentialDiff=" + getPotentialDiff() + "]";
 	}
 }

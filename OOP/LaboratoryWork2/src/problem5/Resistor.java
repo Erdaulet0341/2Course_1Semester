@@ -8,6 +8,8 @@ public class Resistor extends Circuit {
 	public Resistor() {
 		
 	}
+	public Resistor(double r) {
+		this.resistor = r;	}
 	
 	public double getResistor() {
 		return resistor;
@@ -17,12 +19,12 @@ public class Resistor extends Circuit {
 		this.resistor = resistor;
 	}
 
-	public Resistor(double r) {
-		this.resistor = r;	}
+	
 
 	public double getResistance() {
 		return resistor;
 	}
+
 
 	public double getPotentialDiff() {
 		return potentialDifference;
@@ -30,6 +32,10 @@ public class Resistor extends Circuit {
 
 	public void applyPotentialDiff(double V) {
 		this.potentialDifference = V;
+	}
+	
+	public String toString() {
+		return "Resistor [resistor=" + resistor + ", potentialDifference=" + potentialDifference + "]";
 	}
 	
 }

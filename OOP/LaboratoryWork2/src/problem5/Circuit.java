@@ -6,11 +6,11 @@ public abstract class Circuit {
 	public abstract void applyPotentialDiff(double V);
 	
 	public double getPower() {
-		return getCurrent() * getPotentialDiff();	
+		return (getPotentialDiff() * getPotentialDiff()) / getResistance();	
 	}
 	
 	public double getCurrent() {
-		return getResistance() / getPotentialDiff();
+		return getPotentialDiff() / getResistance();
 	}
 	
 	public String toString() {

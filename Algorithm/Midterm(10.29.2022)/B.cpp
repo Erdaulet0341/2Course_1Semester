@@ -1,38 +1,37 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
 
-int zer[100005];
+int beknur[100005];
 
 vector<int> prime(int n){
-    vector<int> v;
+    vector<int> vt;
     for(int i=2; i*i<=n; i++){
-        if(zer[i]==0){
+        if(beknur[i]==0){
             int k=i; 
             while(k<=n){
                 k+=i;
-                zer[k]=1;
+                beknur[k]=1;
             }
         }
     }
     for(int i=2; i<=n; i++){
-        if(zer[i]==0){
-            v.push_back(i);
+        if(beknur[i]==0){
+            vt.push_back(i);
         }
     }
 
-    return v;
+    return vt;
 }
 
 int main(){
     int n;
     cin >> n;
-    vector<int> v = prime(n);
+    vector<int> vt = prime(n);
 
-    for(int i=0; i<v.size(); i++){
-        for(int j=i; j<v.size(); j++){
-            if(v[i]+v[j]==n){
-                cout << v[i] << " " << v[j];
+    for(int i=0; i<vt.size(); i++){
+        for(int j=i; j<vt.size(); j++){
+            if(vt[i]+vt[j]==n){
+                cout << vt[i] << " " << vt[j];
                 return 0;
             }
         }

@@ -20,6 +20,14 @@ public class Sphere extends Shape{
 		return 4*PI*radius*radius;
 	}
 	
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+
 	public String toString() {
 		return super.toString() + ", raduis = " + radius;
 	}

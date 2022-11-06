@@ -36,6 +36,14 @@ public class Cylinder extends Shape {
 		return surfaceArea();
 	}
 	
+	public double getRadius() {
+		return radius;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
 	public String toString() {
 		return super.toString() + ", raduis = " + radius + ", height = " + height;
  	}

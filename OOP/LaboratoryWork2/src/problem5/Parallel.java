@@ -42,6 +42,6 @@ public class Parallel extends Circuit {
 		this.potDiff = V;
 	}
 	public String toString() {
-		return "Parallel [Resistance=" + getResistance() + ", PotentialDiff=" + getPotentialDiff() + "]";
+		return super.toString() + " - Parallel [Resistance=" + getResistance() + ", PotentialDiff=" + getPotentialDiff() + "]";
 	}
 }
