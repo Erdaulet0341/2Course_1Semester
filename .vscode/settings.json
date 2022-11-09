@@ -8,7 +8,10 @@
         "utility": "cpp",
         "valarray": "cpp",
         "deque": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "tuple": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
