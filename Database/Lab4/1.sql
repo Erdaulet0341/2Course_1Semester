@@ -18,6 +18,9 @@ select * from course where dept_name = 'Comp. Sci.';
 select s.course_id, title, dept_name, credits
 from course join section s
 on course.course_id = s.course_id where semester = 'Fall';
+select *
+from course
+where course_id in (select course_id from section where semester = 'Fall');
 
 
 
@@ -36,5 +39,8 @@ select * from student where right(name, 1) in ('a', 'e', 'i', 'o', 'u');
 select course.course_id, title, dept_name, p.prereq_id
 from course join prereq p
 on course.course_id = p.course_id where p.prereq_id = 'CS-101';
+select *
+from course
+where course_id in (select course_id from prereq where prereq_id = 'CS-101');
 
 

@@ -19,6 +19,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Educational materials\2Course_1Semester\2Course_1Semester\OOP\Lecture8"/>
+			<item value="C:\Users\007\Downloads\streamsExamples"/>
 			<item value="C:\Users\007\Downloads\practice3"/>
 		</list>
 	</section>
