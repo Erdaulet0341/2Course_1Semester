@@ -23,9 +23,17 @@ You can write you code after this comment :
 '''
 
 #Your code here:
+import numpy as np
+from sklearn.linear_model import LinearRegression
 input1 = [int(i) for i in input1.split(',')]
 input2 = [int(i) for i in input2.split(',')]
 
+x = np.array(input1).reshape((-1, 1))
+y = np.array(input2)
+
+model = LinearRegression().fit(x, y)
+w1 = float(model.coef_)
+b = float(model.intercept_)
 
 
 #use this printing (where "w1" is the weight and "b" the bias)

@@ -25,3 +25,7 @@ You can write you code after this comment :
 import numpy as np
 input1 = [int(i) for i in input1.split(',')]
 input2 = [int(i) for i in input2.split(',')]
+
+array = np.array([input1, input2])
+array_transpose = array.transpose()
+print(array_transpose)
