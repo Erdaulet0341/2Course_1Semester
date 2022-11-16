@@ -28,17 +28,6 @@ int count(string& pat, string& txt)
     return res;
 }
 
-int c(string& p, string& t){
-    int res=0; int n = t.size(); int m = p.size();
-    for(int i=0; i<=n-m; i++){
-        int j;
-        for(j=0; j<m; j++){
-            if(t[i+j] != p[j]) break;
-        }
-        if(j==m) res++;
-    }
-    return res;
-}
 
 int main(){
     string s;
@@ -52,6 +41,6 @@ int main(){
     }
 
     for(int i=0; i<n; i++){
-        cout << c(v[i], s) << endl;
+        cout << count(v[i], s) << endl;
     }
 }
