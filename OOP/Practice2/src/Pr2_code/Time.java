@@ -1,6 +1,8 @@
 package Pr2_code;
 
-public class Time {
+import java.util.Comparator;
+
+public class Time implements Comparable<Time>,Comparator<Time>{
 	public int hour;
 	public int minute;
 	public int second;
@@ -63,4 +65,31 @@ public class Time {
 			return time1;
 		}
 	}
+    
+    public int compareTo(Time o) {
+        if(hour == o.hour) {
+            if(minute == o.minute) {
+                return second - o.second;
+            }
+            else return minute - o.minute;
+        }
+        else return hour - o.hour;
+    }
+
+    @Override
+    public String toString() {
+        return "Time [hour=" + hour + ", minute=" + minute + ", second=" + second + "]";
+    }
+
+    @Override
+    public int compare(Time o, Time o2) {
+        if(o2.hour == o.hour) {
+            if(o2.minute == o.minute) {
+                return o2.second - o.second;
+            }
+            else return o2.minute - o.minute;
+        }
+        else return o2.hour - o.hour;
+    }
+	
 }

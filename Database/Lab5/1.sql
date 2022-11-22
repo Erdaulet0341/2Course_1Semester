@@ -34,13 +34,12 @@ select distinct contents
 from boxes;
 
 --7)
-select code, capacity
-from warehouses;
+select  warehouse, count(warehouse) number_of_boxes
+from Boxes group by warehouse;
 
 --8)
-select code, capacity
-from warehouses
-where capacity>2;
+select  warehouse, count(warehouse) number_of_boxes
+from Boxes group by warehouse having count(warehouse)>2;
 
 --9)
 insert into warehouses (code, location, capacity)
