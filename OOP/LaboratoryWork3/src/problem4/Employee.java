@@ -1,4 +1,4 @@
-package Problem4;
+package problem4;
 
 import java.util.Date;
 import java.util.Objects;
@@ -66,7 +66,7 @@ public class Employee extends Person implements Comparable<Employee>, Cloneable{
 	
 	public Object clone() throws CloneNotSupportedException{
 		Employee e = (Employee) super.clone();
-		e.hireDate = (Date) hireDate.clone();
+		//e.hireDate = (Date) hireDate.clone();
 		return e;
 	}
 	

@@ -9,6 +9,8 @@ public class Test {
 		p.moveable();
 		p.moveableAir();
 		
+		System.out.println("\n");
+		
 		s.moveable();
 		s.moveableWater();
 	}

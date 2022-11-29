@@ -13,8 +13,8 @@ public abstract class Transport{
 	public abstract void move();
 	
 	
-	public String getName() {
-		return name;
+	public String getName() {     //can have non abstract methods
+		return name; 
 	}
 	public void setName(String name) {
 		this.name = name;

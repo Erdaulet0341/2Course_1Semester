@@ -1,6 +1,6 @@
 package problem2;
 
-public class Plane implements Moveable, MoveableOnAir{
+public class Plane implements Moveable, MoveableAir{
 	public String name;
 	public Plane() {};
 	public Plane(String name) {
@@ -8,7 +8,7 @@ public class Plane implements Moveable, MoveableOnAir{
 	}
 	@Override
 	public void moveableAir() {
-		System.out.println("Plane can move on Air");
+		System.out.println("Plane can move Air");
 		
 	}
 	@Override
@@ -16,5 +16,11 @@ public class Plane implements Moveable, MoveableOnAir{
 		System.out.println("Plane is moving");
 		
 	}
+	@Override
+	public String toString() {
+		return "Plane [name=" + name + "]";
+	}
+	
+	
 	
 }

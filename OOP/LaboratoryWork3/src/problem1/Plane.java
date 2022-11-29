@@ -1,6 +1,6 @@
 package problem1;
 
-public class Plane extends Transport implements Moveable{ // extend only one abstract class
+public class Plane extends Transport implements Moveable{ // extend only one abstract class (abstract)
 	public Plane() {};
 	public Plane(String name) {
 		super(name);
@@ -13,7 +13,10 @@ public class Plane extends Transport implements Moveable{ // extend only one abs
 	}
 	@Override
 	public void moveable(Transport t) {
-		System.out.println("Plane is moving !!!");
-		
+		System.out.println("Plane is moving !!!");	
+	}
+	
+	public String toString() {
+		return "Name = " + super.getName();
 	}
 }

@@ -5,10 +5,13 @@ public class Test {
 		Plane plane = new Plane("Scat"); 
 		Ship ship = new Ship("Titanic");
 		
-		plane.move();
+//		Transport t = new Transport("transport");  // with abstract classes and interfaces we don't use new() key-word      
+//		Moveable m = new Moveable();
 		
+		plane.move();
 		ship.drownAble();
 		ship.moveable(ship);
-		System.out.println(ship.isDrown); 
+		
+		//System.out.println(plane);
 	}
 }

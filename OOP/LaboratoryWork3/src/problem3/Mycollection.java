@@ -1,5 +1,6 @@
 package problem3;
 
+import java.util.Iterator;
 
 public interface Mycollection<E>{
 	boolean add(E e);
@@ -10,7 +11,9 @@ public interface Mycollection<E>{
 	
 	boolean isEmpty();
 	
-	boolean remove();
+	boolean remove(E e);
 	
-	boolean contains();
+	boolean contains(E e);
+	
+	public Iterator iterator();
 }

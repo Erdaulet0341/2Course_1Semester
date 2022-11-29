@@ -1,13 +1,13 @@
 package problem5;
-import java.lang.reflect.Array;
-import java.util.Date;
-import java.util.Vector;
+import java.text.ParseException;
+
 import Pr2_code.Time;
-import Problem4.*;
+import problem4.*;
 
 public class Test {
 
-	public static <E> void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
+		
 		Time t = new Time(13, 22 , 16);
 		Time t2 = new Time(4, 24, 23);
 		Time t3 = new Time(4, 24, 22);
@@ -20,8 +20,9 @@ public class Test {
         for(Time i: times) {
         	System.out.println(i);;
         }
-		
 		System.out.println("\n");
+		
+		
 		
 		Chocolate c1 = new Chocolate("Snickers", 140);
 		Chocolate c2 = new Chocolate("Twix", 130);
@@ -37,20 +38,21 @@ public class Test {
 		for(Chocolate i: chocolate) {
 			System.out.println(i);
 		}
-		
 		System.out.println("\n");
 		
 		
-		Employee e1 = new Employee("Era", 984000.5, new Date(119, 7, 30), "KZ_01" );
-		Employee e2 = new Employee("Duka", 783000.5, new Date(121, 5, 17), "KZ_02" );
-		Employee e3 = new Employee("Aset", 899400.5, new Date(120, 1, 3), "KZ_03" );
+		
+		Dates date = new Dates();
+		Employee e1 = new Employee("Era", 984000.5, date.getTime("30-01-2016"), "KZ_01" );
+		Employee e2 = new Employee("Duka", 783000.5, date.getTime("15-04-2010"), "KZ_02" );
+		Employee e3 = new Employee("Aset", 899400.5, date.getTime("27-09-2021"), "KZ_03" );
 		
 		Employee[] employees = new Employee[3];
 		employees[0] = e1;
 		employees[1] = e2;
 		employees[2] = e3;
-		Sort.quicksort(employees, 0, employees.length-1);
-		//Sort.BubbleSort(employees);
+		//Sort.quicksort(employees, 0, employees.length-1);
+		Sort.BubbleSort(employees);
 		for(Employee i: employees) {
 			System.out.println(i);
 		}

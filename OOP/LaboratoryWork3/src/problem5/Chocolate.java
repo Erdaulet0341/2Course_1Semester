@@ -24,15 +24,13 @@ public class Chocolate implements Comparable<Chocolate>{
 		this.weight = weight;
 	}
 
-	
-	public String toString() {
-		return "Chocolate [name=" + name + ", weight=" + weight + "]";
-	}
-
 	@Override
 	public int compareTo(Chocolate o) {
 		return weight - o.weight;
 	}
 	
+	public String toString() {
+		return "Chocolate [name=" + name + ", weight=" + weight + "]";
+	}
 	
 }

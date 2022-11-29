@@ -1,10 +1,11 @@
-package Problem4;
+package problem4;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.Objects;
 import java.util.Vector;
 
 
-public class Manager extends Employee implements Comparable<Employee>{
+public class Manager extends Employee implements Comparable<Employee>, Cloneable{
 	final int bonusForOneEmployee=5;
 	public int cnt=0;
 	Employee e;
@@ -34,9 +35,18 @@ public class Manager extends Employee implements Comparable<Employee>{
 	}
 	
 	public int compareTo(Manager m) {
-		if(m.getBonus() == getBonus()) return 0;
-		else if(getBonus() > m.getBonus()) return 1;
-		return -1;
+		if(super.compareTo(m)  == 0) {
+			if(m.getBonus() == getBonus()) return 0;
+			else if(getBonus() > m.getBonus()) return 1;
+			return -1;
+		}
+		return super.compareTo(m);	
+		//return getBonus() - m.getBonus();
+	}
+	
+	public Object clone() throws CloneNotSupportedException{
+		Manager m = (Manager) super.clone();
+		return m;
 	}
 	
 	public String toString() {
