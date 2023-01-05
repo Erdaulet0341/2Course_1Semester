@@ -1,0 +1,5 @@
+package working3;
+
+public enum Day {
+	MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY;
+}

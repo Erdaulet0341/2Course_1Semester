@@ -1,4 +1,5 @@
 Refactoring.savealleditors=true
+command=D\:\\Progran_files2\\Java2022\\bin\\javadoc.exe
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="Problem5.Gender"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="Problem5.Gender"/></lhs><lhs name\="Problem5.Gender"><rhs name\="Problem5.Gender"/></lhs><lhs name\="Pr2_code.Student"><rhs name\="Pr2_code.Student"/></lhs></history>
 content_assist_number_of_computers=12
 eclipse.preferences.version=1

@@ -1,0 +1,3 @@
+https://app.genmymodel.com/api/projects/_uXV0QG8sEe2ck8ytUMEi6A/diagrams/_uXaFsG8sEe2ck8ytUMEi6A/svg for class diagram
+
+https://app.genmymodel.com/api/projects/_pd4EIHIPEe2ck8ytUMEi6A/diagrams/_peBOEHIPEe2ck8ytUMEi6A/svg for use-case diagram
